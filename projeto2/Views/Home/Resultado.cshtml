@@ -1,0 +1,75 @@
+﻿@model projeto2.Models.persona
+
+@{
+    ViewBag.Title = "Resultado";
+}
+
+<h2>Cadastros</h2>
+
+<div>
+    <h4>Personagens</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NomePersona)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NomePersona)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Idade)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Idade)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Personalidade)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Personalidade)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Frase)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Frase)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NomeAtor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NomeAtor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdadeAtor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdadeAtor)
+        </dd>
+
+    </dl>
+</div>
+<br />
+<br />
+<br />
+<br />
+<br />
+
+<br />
+<br />
+
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
